@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "crystalmacro",
+  "version": "${version}",
+  "name": "Crystal Macro",
+  "description": "Haltetaste: platziert und zerstoert End Crystals mit einer Aktion pro Tick.",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.crystalmacro.CrystalMacroClient"] },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "fabric-api": "*",
+    "java": ">=25"
+  }
+}
