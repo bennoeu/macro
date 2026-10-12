@@ -46,7 +46,7 @@ public class CrystalMacroClient implements ClientModInitializer {
     private static void tick(Minecraft mc) {
         if (!holdKey.isDown()) return;
         if (mc.player == null || mc.level == null || mc.gameMode == null) return;
-        if (mc.screen != null || mc.player.isUsingItem()) return;
+        if ( != null || mc.player.isUsingItem()) return;
 
         HitResult hit = mc.hitResult;
         if (hit == null) return;
